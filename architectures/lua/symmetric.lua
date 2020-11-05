@@ -6,6 +6,7 @@ local processors = mpsym.identical_processors(args[1], 'P')
 local channels = mpsym.fully_connected_channels(processors, 'C')
 
 return mpsym.ArchGraph:create{
+  directed = false,
   processors = processors,
   channels = channels
 }

@@ -11,6 +11,7 @@ mpsym.append_channels(channels, mpsym.self_connected_channels(p2_processors, 'L2
 mpsym.append_channels(channels, mpsym.fully_connected_channels(processors, 'RAM'))
 
 return mpsym.ArchGraph:create{
+  directed = false,
   processors = processors,
   channels = channels
 }
