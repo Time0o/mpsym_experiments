@@ -117,16 +117,13 @@ declare -A exynos=(["num_tasks"]="4 8 12 16"
                               mpsym:iterate
                               mpsym:orbits
                               mpsym:local_search"
-                   ["num_runs"]=100)
+                   ["num_runs"]=10)
 
 declare -A haec=(["num_tasks"]="4 8 12 16"
                  ["num_task_mappings"]=10000
                  ["reprs"]="mpsym:iterate
                             mpsym:orbits
-                            mpsym:local_search
-                            mpsym:iterate?dont_decompose
-                            mpsym:orbits?dont_decompose
-                            mpsym:local_search?dont_decompose"
+                            mpsym:local_search"
                  ["num_runs"]=10)
 
 declare -A kalray=(["num_tasks"]="4 8 12 16"
